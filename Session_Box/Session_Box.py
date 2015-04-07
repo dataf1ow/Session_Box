@@ -5,12 +5,10 @@
 #    Evan Bogunia evanbeta@keithmcmillen.com
 #                        
 #-----------------------------------------------
-
+#Importing our Modules.
 from __future__ import with_statement
-
 import Live
 import time
-
 from _Framework.ControlSurface import ControlSurface
 from _Framework.SessionComponent import SessionComponent
 
@@ -31,7 +29,7 @@ class Session_Box(ControlSurface):
   def _setup_session_control(self):
     num_tracks = 8 #8 columns (tracks)
     num_scenes = 8 #8 rows (scenes)
-    #(num_tracks, num_scenes) a session highlight ("red box") will appear with any two non-zero values
+    #(num_tracks, num_scenes) a session highlight ("red box") 
     self.session = SessionComponent(num_tracks,num_scenes)
     self.session.set_offsets(0,0)
   
